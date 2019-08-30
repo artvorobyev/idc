@@ -1,0 +1,19 @@
+.Upload {
+  border-radius: 12px;
+  border: 2px dashed lighten(grey,10%);
+  color: grey;
+  cursor: pointer;
+  font-weight: normal;
+  padding: 20px;
+  text-align: center;
+
+  &:hover, &.dz-drag-hover {
+    border-color: #2684FF;
+    color: #2684FF;
+  }
+
+  .dz-preview {
+    display: none;
+  }
+  
+}

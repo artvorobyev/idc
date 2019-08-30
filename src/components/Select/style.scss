@@ -1,0 +1,41 @@
+.Select {
+  div[class*='control'] {
+    border:none !important;
+    height: 44px;
+    border-radius: 12px;
+
+
+    
+    &[class*='1pahdxg'] {
+      box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+    }
+
+    & > div:first-child {
+      padding-left: 15px;
+    }
+
+    [class*='indicatorSeparator'] {
+      opacity: 0 !important;
+    }
+  }
+
+  div[class*='menu'] {
+    border:none !important;
+    border-radius: 12px;
+    overflow: hidden;
+    padding: 0;
+
+    > div {
+      padding: 0;
+
+      > div {
+        padding: 10px 15px;
+      }
+    }
+  }
+
+  .css-1uccc91-singleValue {
+    color: #000 !important;
+    margin: 0 !important;
+  }
+}

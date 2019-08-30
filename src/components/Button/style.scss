@@ -1,0 +1,51 @@
+.Button {
+  background-color: #000;
+  background-image: linear-gradient(139.63deg, rgba(#45D5C6,0.8) 12.31%, rgba(#8472F2,0.8) 51.43%, rgba(#EC5E5C,0.8) 92.21%);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: 150% 150%;
+  border:none;
+  border-radius:12px;
+  color: #fff;
+  display: block;
+  font-size: 18px;
+  padding: 15px;
+  position: relative;
+  text-align: center;
+  transition: .5s;
+  width: 100%;
+
+  &:hover {
+    background-color: lighten(#000, 50%);
+    background-size: 175% 175%;
+  }
+
+  &:before {
+    background-image: url('../../img/Button-loader.svg');
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: auto 80%;
+    content: '';
+    display: block;
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    transition: .7s;
+    width: 100%;
+    z-index: -1;
+    visibility: hidden;
+  }
+
+  &--loading {
+    pointer-events: none;
+    color: transparent;
+
+    &:before {
+      opacity: 1;
+      visibility: visible;
+      z-index: 2;
+    }
+  }
+}

@@ -1,0 +1,62 @@
+.App {
+  align-items: stretch;
+  display: flex;
+  min-height: 100vh;
+
+  &__screen {
+    align-items: center;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    padding:50px;
+  }
+
+  &__sidebar {
+    background-color: darken(#fff, 5%);
+    flex: 0 0 360px;
+    padding:20px 30px 0;
+  }
+
+  
+
+  &__header {
+    align-items: flex-start;
+    display: flex;
+  }
+
+  &__logo {
+    margin-left: -15px;
+    margin-top: -20px;
+    width: 100px;
+  }
+
+  &__title {
+    font-size: 18px;
+    font-weight: normal;
+    padding-top: 30px;
+    margin-left: -15px;
+  }
+
+
+  &__form {
+    padding-top: 30px;
+  }
+
+  &__banner {
+    box-shadow: 0 0 30px 30px rgba(grey,0.1);
+    display: table;
+  }
+
+
+  
+}
+
+.form-control {
+  border-radius:12px !important;
+  border: none !important;
+  color: #000;
+  font-weight: 400;
+  height: auto !important;
+  padding: 10px 15px !important;
+  resize: none;
+}

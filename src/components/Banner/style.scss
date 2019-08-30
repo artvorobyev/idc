@@ -1,0 +1,206 @@
+.Banner {
+  background-repeat: no-repeat;
+  height: 630px;
+  position: relative;
+  width: 1200px;
+
+
+
+  &__title {
+    font-weight: bold;
+  }
+
+  &__description {
+    font-weight: 300;
+  }
+
+  &__image {
+    display: none;
+  }
+
+  &__role {
+    display: none;
+  }
+
+
+
+  &--slogan {
+    background-image: url('../../img/Banner-slogan-bg.svg');
+    color: #fff;
+    padding-left: 243px;
+    padding-top: 86px;
+  }
+
+  &--slogan &__title {
+    font-size: 72px;
+    line-height: 114.1%;
+    padding-bottom: 17px;
+    max-width: 780px;  
+  }
+
+  &--slogan &__description {
+    font-size: 48px;
+    line-height: 114.1%;
+    max-width: 764px;
+  }
+
+
+
+
+  &--photo {
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    color: #FFFFFF;
+    font-size: 60px;
+    line-height: 114.1%;
+    padding-left: 281px;
+    padding-right: 115px;
+    padding-top: 208px;
+
+    &:before {
+      background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), linear-gradient(155.95deg, #45D5C6 12.31%, #8472F2 58.09%, #EC5E5C 92.21%);
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      content:'';
+      height: 100%;
+      left: 0;
+      opacity: 0.85;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      z-index: 1;
+    }
+
+    &:after {
+      background-image: url('../../img/logo.svg');
+      background-repeat: no-repeat;
+      background-size: contain;
+      content: '';
+      display: block;
+      height: 229px;
+      left: 100px;
+      position: absolute;
+      top: 21px;
+      width: 229px;
+      z-index: 2;
+    }
+  }
+
+  &--photo &__title {
+    position: relative;
+    z-index: 2;
+  }
+
+  &--photo &__description {
+    position: relative;
+    z-index: 2;
+  }
+
+  &--photo &__image {
+    display: block;
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+
+    img {
+      height: 10px;
+      width: 10px;
+    }
+  }
+
+
+
+  &--icon,
+  &--number {
+    background-image: url('../../img/Banner-icon-bg.svg');
+    background-repeat: no-repeat;
+    background-position: 6px 0;
+    color: #000;
+    font-size: 48px;
+    line-height: 114.1%;
+    padding-left: 341px;
+    padding-right: 72px;
+    padding-top: 361px;
+  }
+
+  &--number &__title {
+    color: #FFFFFF;
+    font-size: 288px;
+    font-weight: bold;
+    left: 45px;
+    line-height: 114.1%;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 445px;
+  }
+
+  &--icon &__image {
+    align-items:center;
+    display: flex;
+    justify-content: center;
+    height: 199px;
+    left: 142px;
+    position: absolute;
+    top: 84px;
+    width: 199px;
+    z-index: 2;
+
+    img {
+      max-width: 100%;
+      max-width: 100%;
+      object-fit: contain;
+    }
+  }
+
+
+
+
+
+  &--speaker {
+    background-image: url('../../img/Banner-speaker-bg.svg');
+    background-repeat: no-repeat;
+    color: #000;
+    font-size: 48px;
+    line-height: 114.1%;
+    padding-left: 135px;
+    padding-right: 168px;
+    padding-top: 133px;
+  }
+
+  &--speaker &__image {
+    border-radius: 50%;
+    display: block;
+    height: 148px;
+    left: 135.18px;
+    overflow: hidden;
+    position: absolute;
+    top: 112px;
+    width: 148px;
+
+    img {
+      height: 100%;
+      object-fit: cover;
+      width: 100%;
+    }
+  }
+
+  &--speaker &__title {
+    padding-left: 198px;
+  }
+
+  &--speaker &__description {
+    font-size: 42px;
+    font-weight: normal;
+    padding-top: 76px;
+  }
+
+  &--speaker &__role {
+    display: block;
+    font-weight: 300;
+    font-size: 24px;
+    margin-top: -7px;
+    padding-left: 198px;
+  }
+}

@@ -4,16 +4,18 @@ import './style.scss';
 
 class ButtonContainer extends Component {
   render() {
-    var _self = this;
+    var props = this.props;
     return (
-      <Button 
-        color="primary" 
-        {..._self.props} 
-        className={` ${_self.props.className} Button ${ (_self.props.loading) ? 'Button--loading' : '' } `} 
-      />
-    )
+      <Button
+        color='primary'
+        className={` ${props.className} Button ${
+          props.loading ? 'Button--loading' : ''
+        } `}
+      >
+        {props.children}
+      </Button>
+    );
   }
-  
 }
 
 export default ButtonContainer;
